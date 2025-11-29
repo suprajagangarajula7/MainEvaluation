@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" role="main">
+    <h1>Mini Fleet Management App</h1>
+    <form id="loginForm" autocomplete="off">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password" required>
+    <button id="btn">login</button>
+    </form>
+    </div>
+</body>
+<script>
+    const loginBtn= document.getElementById("btn")
+    loginBtn.addEventListener("click", ()=>{
+        window.location.href='admin.html'
+    })
+</script>
+</html>

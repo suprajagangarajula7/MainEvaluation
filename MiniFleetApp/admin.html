@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="title">Admin Dashboard</div>
+        <label class="inline">Category:
+            <select id="filterCatogory">
+                <option value="All">All</option>
+                <option value="Auto">Auto</option>
+                <option value="Car">Car</option>
+                <option value="Truck">Truck</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </label>
+         <label class="inline">Category:
+            <select id="filterAvailability">
+                <option value="All">All</option>
+                <option value="Available">Available</option>
+                <option value="Unvailable">Unvailable</option>
+            </select>
+        </label>
+        <button id="clearFilter" class="secondary">Clear Filter</button>
+    </header>
+
+    <div class="wrap">
+        <aside class="sidebar">
+            <h2>Add fleet</h2>
+            <div class="field">
+                <label for="regNo">Reg No of Vechile</label>
+                <input id="regNo" type="text" placeholder="ABC_1234"/>
+            </div>
+
+            <div class="field">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">---Select---</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Car">Car</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Bus">Bus</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="driver">Driver Name</label>
+                <input for="driver" type="text" placeholder="Drivers Name"/>
+            </div>
+             <div class="field inline">
+                <input for="isAvailable" type="checkbox" />
+                <label for="isAvailable">Available</label>
+                </div>
+
+                <button id="addFleetBtn" class="primary">Add Fleet</button>
+                <div class="note">Required: Reg No, Category, Driver.</div>
+        </aside>
+        <main class="main">
+            <h2>Fleet-Cards</h2>
+            <div id="cardContainer" class="cards" aria-live="polite"></div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
