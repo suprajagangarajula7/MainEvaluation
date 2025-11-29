@@ -47,5 +47,13 @@
         }
          if(!driver){
             alert("Driver is required")
-        }
+        } 
+        return {regNo, category, driver availability};
     }
+
+    addFleetBtn.addEventListener("click",()=>{
+        const data=validateForm();
+        if(!data) return;
+
+        const newVechile
+    })
